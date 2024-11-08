@@ -1,68 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/1df5f6b615.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1df5f6b615.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Web Project</title>
-</head>
-<body>
-    <header style="display: flex; justify-content: space-between; align-items: center; font-weight: 550; padding: 10px 200px;"> 
-        
-<img src="weblogo.png" alt="weblogo">
-<ul style="list-style-type: none; display: flex; justify-content: space-between; gap: 25px; font-size: 14px;">
-<li><span style="border: 1px solid #dfe0e4; border-radius: 10px; padding: 8px 50px">Download the App</span></li>
-<li>travel planner</li>
-<li>register accomodation</li>
-<li>Help</li>
-<li>My Travels</li>
-<li>Register</li>
-</ul>
+  </head>
+  <body>
+    <header>
+      <img src="weblogo.png" alt="weblogo" />
+      <ul class="header-nav">
+        <li><span class="app-download">Download the App</span></li>
+        <li>travel planner</li>
+        <li>register accommodation</li>
+        <li>Help</li>
+        <li>My Travels</li>
+        <li>Register</li>
+      </ul>
+    </header>
 
-</header>
-<div class="background-container" style="position: relative; background-image: url('img1.jpeg'); display: flex; justify-content: start; align-items: center; background-size: cover; background-position: center; height: 500px; color: white; ">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
-    <div style=" padding: 0px 200px;">
-
-        <p style="font-size: 56px; font-weight: bold; z-index: 1; position: absolute ;">Everything is fine, you book with FeWo-<br>direkt</p>
-        <div>
-            <input type="text" placeholder="Where should we go?" style="padding: 10px 50px; border-radius: 10px;">
-            <input type="text" placeholder="Enter your date" style="padding: 10px 50px; border-radius: 10px;">
-            <input type="text" placeholder="guests" style="padding: 10px 50px; border-radius: 10px;">
-            <button style="padding: 10px 50px; border-radius: 10px;">Search</button>
-    
+    <div class="background-container">
+      <div class="overlay"></div>
+      <div class="text-container">
+        <p class="hero-text">All good, you book at FeWo-direkt</p>
+        <div class="search-container">
+          <div class="search-bar">
+            <input type="text" placeholder="Where should we go?" />
+            <input type="text" placeholder="Enter your date" />
+            <input type="text" placeholder="guests" />
+            <button class="btn">Search</button>
           </div>
-
-        
-    </div>
-   
-
-</div>
-<div>
-    <h3 style="padding: 10px 50px;font-size: 28px;">Popular travel destinations</h3>
-    <div>
-        <ul style="list-style-type: none; display: flex; justify-content: space-between; gap: 25px; align-items: center; text-align: center;">
-            <img src="img1.jpeg" alt="kigali" style="height: 150px; width: 180px;"></img>
-          
         </div>
-    <div>
-    <ul style="list-style-type: none; display: flex; justify-content: space-between; gap: 25px; text-align: center;">
-        <li>Kigali</li>
-        <li>Paris</li>
-        <li>Nairobi</li>
-        <li>Dubai</li>
-        <li>Gisenyi</li>
-        <li>Kampala</li>
-        <li>Brussels</li>
-        <li>Dar es Salaam</li>
-        <li>Yaounde</li>
-        <li>Douala</li>
+      </div>
     </div>
-    </ul>
-</div>
-    
-<!-- <img src="img1.jpeg" alt="img1" width="100%" height="500px">  -->
-    
-   
-</body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script
+          src="https://kit.fontawesome.com/03ecdfcafe.js"
+          crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>FeWo-direkt | Home</title>
+      </head>
+      <body>
+        <!-- Sign in to save favorites -->
+        <main class="container">
+          <!-- Find accommodations cards -->
+          <section class="find-accommodation-section group">
+            <h2>Find accommodations to suit your taste</h2>
+
+            <!-- Scroll Icons -->
+            <i
+              class="fa-solid fa-arrow-left scroll-icons left group-hover:block"
+            ></i>
+            <i
+              class="fa-solid fa-arrow-right scroll-icons right group-hover:block"
+            ></i>
+
+            <!-- Cards -->
+            <div class="cards-container">
+              <a href="#" class="card">
+                <img
+                  src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://forever.travel-assets.com/flex/flexmanager/mediaasset/732141-0_2-VRBO_HOSTS_LA_SAUNA_NEBELING_0101.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/24000000/23090000/23089100/23089080/213fcdf0.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/73000000/72920000/72914700/72914664/79aabf2d.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/45000000/44450000/44444600/44444524/120ff187.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/64000000/63690000/63684600/63684590/166ff7c9.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://mediaim.expedia.com/destination/9/b6f99f260e32ebc1ae01665407dda889.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/19000000/18770000/18764500/18764475/b0071679.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/34000000/33970000/33966600/33966571/491e8d3f.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/33000000/32600000/32590100/32590065/ca4f20f1.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/75000000/74630000/74622200/74622115/f4fb7fe1.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/34000000/33940000/33938200/33938126/ac1017fb.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/96000000/95580000/95575200/95575106/7b499845.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/21000000/20490000/20480500/20480433/6fe83dd9.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://images.trvl-media.com/lodging/35000000/34100000/34091400/34091400/f3dd8015.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+              <a href="#" class="card">
+                <img
+                  src="https://mediaim.expedia.com/destination/9/191dcb074564e1577247dcdce8666268.jpg"
+                />
+                <span class="card-text"><span>holiday home</span></span>
+              </a>
+            </div>
+          </section>
+        </main>
+      </body>
+    </html>
+  </body>
 </html>
